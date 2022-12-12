@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigacia"
+    app:startDestination="@id/DOKUMENTI_1">
+
+    <fragment
+        tools:layout="@layout/dokumenti_1"
+        android:id="@+id/DOKUMENTI_1"
+        android:name="com.example.kotlinis_davaleba_4.DOKUMENTI_1"
+        android:label="DOKUMENTI_1" >
+        <action
+            android:id="@+id/action_DOKUMENTI_1_to_DOKUMENTI_2"
+            app:destination="@id/DOKUMENTI_2" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/dokumenti_2"
+        android:id="@+id/DOKUMENTI_2"
+        android:name="com.example.kotlinis_davaleba_4.DOKUMENTI_2"
+        android:label="DOKUMENTI_2" >
+        <action
+            android:id="@+id/action_DOKUMENTI_2_to_DOKUMENTI_3"
+            app:destination="@id/DOKUMENTI_3" />
+    </fragment>
+    <fragment
+        tools:layout="@layout/dokumenti_3"
+        android:id="@+id/DOKUMENTI_3"
+        android:name="com.example.kotlinis_davaleba_4.DOKUMENTI_3"
+        android:label="DOKUMENTI_3" />
+</navigation>
